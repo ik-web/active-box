@@ -1,4 +1,4 @@
-# active-box
+# ActiveBox
 
 Practical work on site layout using HTML, CSS, JavaScript and JQuery.
 
