@@ -26,7 +26,7 @@ $(function(){
         });
     }
 
-    function doSmoothscroll(menu) {
+    function doSmoothScroll(menu) {
         const scrollSpeed = 800;
 
         $('[data-scroll]').on('click', function(event) {
@@ -61,7 +61,7 @@ $(function(){
         const menu = $('#header-menu');
 
         doBurgerMenu(menu);
-        doSmoothscroll(menu);
+        doSmoothScroll(menu);
         doFixedHeader();
         doSlider();
     }
