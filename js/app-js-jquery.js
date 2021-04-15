@@ -1,9 +1,10 @@
 $(function(){
 
-    function doBurgerMenu(menu) {
-        $('#burger').on('click', function(event) {
+    function doBurgerMenu(menu, burger) {
+        burger.on('click', function(event) {
             event.preventDefault();
-            menu.toggleClass('active');
+            burger.toggleClass('active');
+            menu.toggleClass('active'); 
         });
     }
 
@@ -26,7 +27,7 @@ $(function(){
         });
     }
 
-    function doSmoothScroll(menu) {
+    function doSmoothScroll(menu, burger) {
         const scrollSpeed = 800;
 
         $('[data-scroll]').on('click', function(event) {
@@ -39,6 +40,7 @@ $(function(){
             }, scrollSpeed);
 
             menu.removeClass('active');
+            burger.removeClass('active');
         });
     }
 
@@ -58,10 +60,11 @@ $(function(){
     }
 
     function startScript() {
+        const burger = $('#burger');
         const menu = $('#header-menu');
 
-        doBurgerMenu(menu);
-        doSmoothScroll(menu);
+        doBurgerMenu(menu, burger);
+        doSmoothScroll(menu, burger);
         doFixedHeader();
         doSlider();
     }
