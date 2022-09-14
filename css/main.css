@@ -283,6 +283,8 @@ body {
     height: 350px;
     overflow: hidden;
     border: 1px solid var(--works-border-color);
+
+    cursor: pointer;
 }
 
 .works__image {
