@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://ik-web.github.io/active-box/"><< DEMO LINK >></a> 
+  <a href="https://ik-web.github.io/active-box/">[> DEMO LINK <]</a> 
 </p>
 
 ## Description:
